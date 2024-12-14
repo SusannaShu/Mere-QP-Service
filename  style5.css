@@ -1,0 +1,92 @@
+/* General Style */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: black;
+    color: silver;
+    overflow-x: hidden;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-section {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+#backgroundVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(50%) brightness(0.8);
+    opacity: 0.85;
+}
+
+.text-section {
+    flex: 1;
+    padding: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+.text-section h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 5px silver;
+}
+
+.poem {
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    animation: textPulse 3s infinite ease-in-out;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.interactive-diagram, .survey-section {
+    padding: 3rem;
+    text-align: center;
+}
+
+canvas {
+    width: 100%;
+    height: 400px;
+    background: radial-gradient(circle, rgba(50,50,50,1) 0%, rgba(0,0,0,1) 100%);
+    border: 2px solid silver;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px silver;
+}
+
+#surveyContainer {
+    margin-top: 1rem;
+    background: silver;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes textPulse {
+    0%, 100% { color: silver; }
+    50% { color: lightgray; }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QP Spark</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <button id="backButton">Back</button>
+
+    <div class="main-container">
+        <div class="left-video">
+            <iframe src="https://drive.google.com/file/d/1S8X1XWekvmcAiTqUlz47zZXbLtuoymuc/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+        <div class="right-text">
+            <h1>QP SPARK: Illuminating Careers and Community</h1>
+            <p class="poem">
+                QP Spark buzzes in the shadows of steel,<br>
+                Where tomorrow's dreams begin to feel real.<br>
+                Amid the chaos of concrete and dust,<br>
+                It links hope and doubt, building trust.<br>
+                In Long Island City, where stories unfold,<br>
+                We shape our future, inspired by the bold.
+            </p>
+            <p class="description">
+                <strong>Navigate the Pulse of Industry and Community</strong><br>
+                QP Spark embodies the dynamic intersection of work, technology, and urban living in Long Island City. It highlights the industries that fuel the neighborhood’s vibrancy while offering insights into the balance between career growth and community connection. Explore this tool to uncover the stories and opportunities that shape LIC's identity.
+            </p>
+        </div>
+    </div>
+
+   // diagram
+    <div class="interactive-section">
+        <h2>Career Network Tool</h2>
+        <div id="networkDiagramContainer">
+            <canvas id="networkDiagram"></canvas>
+            <div id="tooltip" class="hidden"></div>
+        </div>
+    </div>
+
+   // survey
+    <div class="survey-section">
+        <h2>Work-Life Balance Survey</h2>
+        <div id="surveyContainer">
+            <form id="surveyForm">
+                <div class="survey-question">
+                    <label>How many hours do you work daily?</label>
+                    <input type="number" id="workHours" min="0" max="24" required>
+                </div>
+                <div class="survey-question">
+                    <label>How many hours do you spend on personal activities daily?</label>
+                    <input type="number" id="personalHours" min="0" max="24" required>
+                </div>
+                <div class="survey-question">
+                    <label>How engaged are you with your community?</label>
+                    <select id="communityEngagement">
+                        <option value="1">Rarely</option>
+                        <option value="2">Occasionally</option>
+                        <option value="3">Moderately</option>
+                        <option value="4">Highly</option>
+                        <option value="5">Very Highly</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="surveyResults" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+</html>

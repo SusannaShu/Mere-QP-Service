@@ -1,0 +1,7 @@
+{
+  "frequency": 0.02,
+  "amplitude": 50,
+  "speed": 2,
+  "pHLevels": [6.5, 7.0, 7.5, 6.8, 7.2],
+  "clarity": ["Clear", "Slightly Murky", "Murky", "Clear", "Slightly Murky"]
+}

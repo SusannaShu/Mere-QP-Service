@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QP Wave: Water Quality Explorer</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <button id="backButton">Back</button>
+
+    <div class="container">
+        <div class="video-section">
+            <iframe src="https://drive.google.com/file/d/1snTNomg_ND0VVd24mromxBgpKMxhhWyK/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+
+        <div class="content-section">
+            <h1>QP WAVE: Water Quality Explorer</h1>
+            <p class="poem">
+                A reminder of life and the water's role.<br>
+                In the streams of health, it finds its place,<br>
+                Moving through challenges, showing its grace.<br>
+                As tides come and go, it softly speaks,<br>
+                In Long Island City, the balance it seeks.
+            </p>
+            <p class="description">
+                <strong>Explore the Story of Water in Urban Life</strong><br>
+                QP Wave invites you to dive deep into the unseen world of water systems, exploring the critical role water quality plays in shaping urban health, mental well-being, and community resilience. This interactive experience lets you visualize real-world data and discover actionable insights about water’s impact on Long Island City and beyond.
+            </p>
+
+            <canvas id="waveCanvas"></canvas>
+
+            <div id="phVisualization">
+                <h2>Water pH Levels Over Time</h2>
+                <canvas id="phCanvas"></canvas>
+            </div>
+
+            <div id="dataVisualization">
+                <h2>Water Quality Data</h2>
+                <div id="dataDetails">
+                    <p><strong>Current pH Level:</strong> <span id="currentPH">7.0</span></p>
+                    <p><strong>Water Clarity:</strong> <span id="waterClarity">Clear</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+</html>

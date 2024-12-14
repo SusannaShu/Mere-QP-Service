@@ -1,0 +1,175 @@
+/* General Style */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    background: black;
+    color: silver;
+    overflow-x: hidden;
+}
+
+/* Back Button */
+#backButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: silver;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#backButton:hover {
+    background: black;
+    color: silver;
+    border: 1px solid silver;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Video Section */
+.left-video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.left-video video {
+    width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    border: 3px solid silver;
+    box-shadow: 0 0 20px silver;
+}
+
+/* Text Section */
+.right-text {
+    flex: 1;
+    padding: 2rem;
+    text-align: left;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.right-text h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 10px silver;
+    margin-bottom: 1.5rem;
+}
+
+.poem {
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    animation: textGlow 3s infinite ease-in-out;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Career Network Tool */
+.interactive-section {
+    padding: 3rem;
+    text-align: center;
+    background: radial-gradient(circle, #333, black);
+    color: silver;
+}
+
+#networkDiagramContainer {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid silver;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: silver;
+    padding: 1rem;
+    border: 1px solid silver;
+    border-radius: 10px;
+    font-size: 1rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#tooltip.hidden {
+    opacity: 0;
+}
+
+/* Survey Section */
+.survey-section {
+    padding: 3rem;
+    text-align: center;
+    background: black;
+}
+
+.survey-question {
+    margin-bottom: 2rem;
+}
+
+input[type="number"],
+select {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid silver;
+    background: black;
+    color: silver;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background: silver;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: black;
+    color: silver;
+    border: 1px solid silver;
+}
+
+#surveyResults {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
